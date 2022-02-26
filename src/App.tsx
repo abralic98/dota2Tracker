@@ -5,7 +5,7 @@ import StartingPage from './components/StartingPage';
 function App() {
   return (
     <div>
-      <StartingPage name="Ante" kurac={32}/>
+      <StartingPage />
     </div>
   );
 }

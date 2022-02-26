@@ -1,12 +1,10 @@
+import classes from "../styles/StartingPage.module.scss"
 import {useState, useEffect, useContext} from "react";
 import Axios from "axios";
 import {ContextApi} from "../context/ContextApi"
-interface type  {
-    name: String
-    kurac: number
-}
 
-const StartingPage = (props: type) =>{
+
+const StartingPage = () =>{
 
     const kontekst = useContext(ContextApi);
     const aa = kontekst;
@@ -19,8 +17,8 @@ const StartingPage = (props: type) =>{
         })
     },[])
     return (
-        <div>
-            <p>Cao {props.name} {props.kurac}</p>
+        <div className={classes.mainBlock}>
+            
         </div>
     )
 }
