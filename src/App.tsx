@@ -1,11 +1,18 @@
 import React from 'react';
 import './App.css';
-import StartingPage from './components/StartingPage';
+import StartingPage from './pages/StartingPage';
+import {Route, Routes, BrowserRouter as Router} from "react-router-dom"
 
 function App() {
   return (
     <div>
-      <StartingPage />
+      <Router>
+        <Routes>
+
+          <Route path='/' element={<StartingPage/>} />
+          
+        </Routes>
+      </Router>
     </div>
   );
 }

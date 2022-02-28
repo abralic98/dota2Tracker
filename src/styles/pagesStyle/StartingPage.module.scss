@@ -1,0 +1,11 @@
+@import "../MainStyles.module.scss";
+
+.mainBlock{
+    width:100vw;
+    height:auto;
+}
+.mainBlock video{
+    z-index:-5;
+}
+
+
