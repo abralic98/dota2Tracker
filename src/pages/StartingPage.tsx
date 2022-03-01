@@ -12,10 +12,10 @@ const StartingPage = () =>{
     console.log(windowSize.width)
     const account_id = "28277592"
     useEffect(()=>{
-        Axios.get(`https://api.opendota.com/api/players/${account_id}/recentMatches`)
+        /*Axios.get(`https://api.opendota.com/api/players/${account_id}/recentMatches`)
         .then((response)=>{
             console.log(response.data)
-        })
+        })*/
     },[])
     return (
         <div className={classes.mainBlock}>

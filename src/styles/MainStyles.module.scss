@@ -12,6 +12,7 @@ $paragraphColor:white;
 $headerParagraphColor:rgb(204, 204, 204);
 $headerNavBarColor:rgba(0, 0, 0, 0);
 $mainFont:"Reggae One";
+$prettyRedColor:rgb(121, 0, 0);
 
 // button styling
 
@@ -28,4 +29,15 @@ $mainFont:"Reggae One";
     transform:scale($scale);
     transition:0.5s;
     font-size:16px;
+}
+
+@mixin button ($backgroundColor, $fontColor, $width, $height, $borderRadius){
+    width:$width;
+    height:$height;
+    background-color: $backgroundColor;
+    color:$fontColor;
+    border-radius: $borderRadius;
+    border:0;
+    font-family: $mainFont;
+    cursor:pointer;
 }
