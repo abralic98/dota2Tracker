@@ -6,6 +6,7 @@ import Axios from "axios";
 export const ContextApi = createContext<any>({});
 
 export const Storage = (props:any) =>{
+    const server = "http://116.203.242.253:3003"
     const firstRender = useRef<boolean>(true);
     const [windowSize, setWindowSize] = useState<Object>({
         width: window.innerWidth,
@@ -23,7 +24,8 @@ export const Storage = (props:any) =>{
     },[])
     const context = {
         state:"kurac",
-        displaySize:[windowSize,setWindowSize]
+        displaySize:[windowSize,setWindowSize],
+        Server:server
     }
 
     return (

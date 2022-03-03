@@ -3,38 +3,48 @@
 .registerBlock{ 
     width:100vw;
     height:100vh;
-    overflow: hidden;
+   
     .background{
-        img{
+        width:100vw;
+        height:100vh;
+        overflow: hidden;
+
+        img{    
            width:100vw;
+           z-index: -10;
         }
     }
-    form{
-        width:20vw;
-        height:auto;
-        background-color: black;
+    .formBlock {
+        width:100vw;
         position:absolute;
-        left:50%;
-        margin-left:-10vw;
-        top:50%;
-        margin-top:-17vw;
-        color:$paragraphColor;
-        font-family: $mainFont;
-        animation:fadeIn 1s forwards;
+        top:0;
+        left:0;
+        z-index:5;
+        height:100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        form{
+            width:20vw;
+            height:auto;
+            background-color: black;
+            
+            color:$paragraphColor;
+            font-family: $mainFont;
+            animation:fadeIn 1s forwards;
+        }
+        .login{
+            width:20vw;
+            height:auto;
+            background-color: black;
+            
+            color:$paragraphColor;
+            font-family: $mainFont;
+            animation:fadeIn 1s forwards;
+        }
     }
-    .login{
-        width:20vw;
-        height:auto;
-        background-color: black;
-        position:absolute;
-        left:50%;
-        margin-left:-10vw;
-        top:50%;
-        margin-top:-10vw;
-        color:$paragraphColor;
-        font-family: $mainFont;
-        animation:fadeIn 1s forwards;
-    }
+    
     .title{
         font-size:25px;
         padding:1vw;
